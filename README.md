@@ -3,7 +3,7 @@ This code is for our paper: [Physics-Constrained Latent States Reconciliation PI
 
 
 # 1. System requirements
-python version: 3.7.10
+python version: 3.10.14
 
 |    Package     | Version  |
 |:--------------:|:--------:|
