@@ -44,6 +44,28 @@ conda install scikit-learn=0.24.2 numpy=1.20.3 pandas=1.3.5 matplotlib=3.3.4
 pip install scienceplots      # for beautiful plots
 ```
 
+# Run examples
+
+### Pendulum
+
+* No damping:&nbsp;&nbsp;&nbsp;    
+    ./Jax_version/no_damping.py or ./pytorch_version/no_damping.py
+* With latent source + no damping:&nbsp;&nbsp;&nbsp;   
+    ./pytorch_version/latent_no_damping.py
+* Damping:&nbsp;&nbsp;&nbsp;   
+    ./Jax_version/damping.py or ./pytorch_version/damping.py
+* With latent source + damping:&nbsp;&nbsp;&nbsp;  
+    ./pytorch_version/latent_damping.py
+
+To run noisy pendulum, add "_noise" to the end. For example, to run noisy damping pendulum: use ./Jax_version/damping_noise.py or ./pytorch_version/damping_noise.py.
+
+### Allen-Cahn
+
+* Full equation:
+    ./Jax_version/allen.py or ./pytorch_version/allen.py
+* With latent source:
+    ./pytorch_version/latent_allen.py
+  
 **Note: As we all know, the training process of neural network models is random, 
 and the volatility of regression models is often greater than that of classification models. 
 Therefore, the results obtained from the above process are not expected to be exactly identical to those mentioned in our manuscript. 
