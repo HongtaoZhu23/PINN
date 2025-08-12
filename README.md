@@ -27,7 +27,7 @@ If you are not familiar with Python and Pytorch framework,
 you can install Anaconda first and use Anaconda to quickly configure the environment.
 ## Create environment
 ```angular2html
-conda create -n new_environment python=3.7.10
+conda create -n new_environment python=3.10.14
 ```
 
 
@@ -39,51 +39,38 @@ conda activate new_environment
 
 ## Install dependencies
 ```angular2html
-conda install pytorch=1.7.1
-conda install scikit-learn=0.24.2 numpy=1.20.3 pandas=1.3.5 matplotlib=3.3.4
-pip install scienceplots      # for beautiful plots
+conda install pytorch=2.3.1
+conda install scikit-learn=1.5.1 numpy=1.24.3 pandas=2.0.3 matplotlib=3.7.2
 ```
 
 # Run examples
 
-### Pendulum
+### Yeast Glycolysis
 
-* No damping:&nbsp;&nbsp;&nbsp;    
-    ./Jax_version/no_damping.py or ./pytorch_version/no_damping.py
-* With latent source + no damping:&nbsp;&nbsp;&nbsp;   
-    ./pytorch_version/latent_no_damping.py
-* Damping:&nbsp;&nbsp;&nbsp;   
-    ./Jax_version/damping.py or ./pytorch_version/damping.py
-* With latent source + damping:&nbsp;&nbsp;&nbsp;  
-    ./pytorch_version/latent_damping.py
+* Without physical constrain:&nbsp;&nbsp;&nbsp;    
+    ./YG/YG_LSTM.py 
+* With physical constrain:&nbsp;&nbsp;&nbsp;   
+    ./YG/YG_PINN.py
+* PINN With parameter deviation:&nbsp;&nbsp;&nbsp;   
+    ./YG/YG_PINN_deviation.py
+  
+To run noisy pendulum, add "_noise" to the end. For example, to run noisy yeast glycolysis: use ./YG/YG_LSTM_noise.py.
 
-To run noisy pendulum, add "_noise" to the end. For example, to run noisy damping pendulum: use ./Jax_version/damping_noise.py or ./pytorch_version/damping_noise.py.
-
-### Allen-Cahn
-
-* Full equation:
-    ./Jax_version/allen.py or ./pytorch_version/allen.py
-* With latent source:
-    ./pytorch_version/latent_allen.py
   
 **Note: As we all know, the training process of neural network models is random, 
 and the volatility of regression models is often greater than that of classification models. 
 Therefore, the results obtained from the above process are not expected to be exactly identical to those mentioned in our manuscript. 
-However, it is evident that the results obtained from our method are superior to those of MLP and CNN.**
+However, it is evident that the results obtained from our method are superior to those of MLP and LSTM.**
 
 In addition, we also provide the results of our training, 
 which are saved in the `results` folder and `results analysis` folder. 
 These results correspond exactly to the data in our manuscript.
 
-What's more, we also provide the codes corresponding to the Figures in our manuscript, 
-which are saved in the `plotter` folder.
-You can use these codes to draw the Figures in the manuscript.
-
 
 # Citation
 If you find it useful, please cite our paper:
 ```bibtex
-@article{wang2024physics,
+@article{zhu2025physics,
   title={Physics-informed neural network for lithium-ion battery degradation stable modeling and prognosis},
   author={Wang, Fujin and Zhai, Zhi and Zhao, Zhibin and Di, Yi and Chen, Xuefeng},
   journal={Nature Communications},
