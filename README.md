@@ -1,21 +1,17 @@
 # PINN4Bioprocess
 This code is for our paper: [Physics-Constrained Latent States Reconciliation PINN Framework for Complex Bio-process Soft Sensing Problems]
 
-> [!IMPORTANT]
-Summary of articles using the XJTU Battery Dataset:
-https://github.com/wang-fujin/XJTU-Battery-Dataset-Papers-Summary
 
 # 1. System requirements
 python version: 3.7.10
 
 |    Package     | Version  |
 |:--------------:|:--------:|
-|     torch      |  1.7.1   |
-|    sklearn     |  0.24.2  |
-|     numpy      |  1.20.3  |
-|     pandas     |  1.3.5   |
-|   matplotlib   |  3.3.4   |
-|  scienceplots  |          |
+|     torch      |  2.3.1   |
+|    sklearn     |  1.5.1  |
+|     numpy      |  1.24.3  |
+|     pandas     |  2.0.3   |
+|   matplotlib   |  3.7.2   |
 
 
 
