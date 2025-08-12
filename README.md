@@ -2,7 +2,7 @@
 This code is for our paper: [Physics-Constrained Latent States Reconciliation PINN Framework for Complex Bio-process Soft Sensing Problems]
 
 ![https://github.com/HongtaoZhu23/PINN/blob/main/Bioprocess.png](https://github.com/HongtaoZhu23/PINN/blob/main/Bioprocess.png)
-![https://github.com/HongtaoZhu23/PINN/blob/main/Results.PNG](https://github.com/HongtaoZhu23/PINN/blob/main/Results.PNG)
+![https://github.com/HongtaoZhu23/PINN/blob/main/Results.png](https://github.com/HongtaoZhu23/PINN/blob/main/Results.png)
 
 
 
