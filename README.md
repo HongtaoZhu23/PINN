@@ -1,12 +1,12 @@
 # PINN4Bioprocess
-This code is for our paper: [Physics-Constrained Latent States Reconciliation PINN Framework for Complex Bio-process Soft Sensing Problems]
+This code is for our paper: [Physics-informed Neural Network based Online Soft Sensing for Complex Industrial Transient Bioprocesses]
 
 ![https://github.com/HongtaoZhu23/PINN/blob/main/Bioprocess.png](https://github.com/HongtaoZhu23/PINN/blob/main/Bioprocess.png)
 ![https://github.com/HongtaoZhu23/PINN/blob/main/Results.png](https://github.com/HongtaoZhu23/PINN/blob/main/Results.png)
 
 
 
-Accurate online predicting of key quality indicators in bioprocesses is critical for operation safety and optimal control. However, many bioprocesses are often transient in nature and have complex kinetics, resulting in significant challenges for developing online monitoring models. Data-driven models exhibit poor generalizability due to delays in data transmission and existing of unmeasurable crucial state variables, while physics-based models are often hard to be well-calibrated for an industrial process due to data availability and batch variations in reaction materials and operating conditions. The Physics-Informed Neural Network (PINN) endeavors to overcome the above challenges, but usually requires well-established mechanistic models, and meets challenges facing drifting model parameters and unmeasurable latent variables. To address these limitations, this study proposes an innovative PINN framework that leverages the kinetics models of parameter drifting issue with limited measured data for real-time estimating latent variables for soft sensing. The proposed approach is thoroughly tested across an industrial penicillin fermentation study (cross-strain/cross-process extrapolation), theoretic simulation experiments, and three representative chemical reaction cases. It is found the proposed modeling framework has excellent extrapolation capabilities and the accuracy of the estimated latent variables is empirically bounded by the accuracy of the physical model parameters, demonstrating a high-precision, strongly generalizable modeling paradigm for complex biochemical processes.
+Accurate online prediction of key quality indicators is critical for bioprocess safety and optimization, yet remains challenging due to complex, transient kinetics and limited measurability. While Physics-Informed Neural Network (PINN) aims to integrate data and mechanics, they usually depend on well-defined models and face issues like parameter drift and unmeasured latent variables. To address these limitations, this study proposes an innovative PINN framework that leverages the kinetics models of parameter drifting issue with limited measured data for real-time estimating latent variables with extrapolation capabilities for soft sensing. The proposed approach is thoroughly tested across an industrial penicillin fermentation study (cross-strain/cross-process extrapolation), theoretic simulation experiments, and three representative chemical reaction cases. It is found the proposed modeling framework has excellent extrapolation capabilities, successfully predicting the behavior of unseen microbial strains and untested process configurations while maintaining robustness under industrial noise and parameter variability. Furthermore, the accuracy of the estimated latent variables is empirically bounded by the accuracy of the physical model parameters, demonstrating a high-precision, strongly generalizable modeling paradigm for complex biochemical processes.
 
 
 
@@ -68,17 +68,3 @@ which are saved in the `results` folder and `results analysis` folder.
 These results correspond exactly to the data in our manuscript.
 
 
-# Citation
-If you find it useful, please cite our paper:
-```bibtex
-@article{zhu2025physics,
-  title={Physics-informed neural network for lithium-ion battery degradation stable modeling and prognosis},
-  author={Wang, Fujin and Zhai, Zhi and Zhao, Zhibin and Di, Yi and Chen, Xuefeng},
-  journal={Nature Communications},
-  volume={15},
-  number={1},
-  pages={4332},
-  year={2024},
-  publisher={Nature Publishing Group UK London}
-}
-```
